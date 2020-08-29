@@ -3438,6 +3438,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  
   padding: 0.5rem 1rem; }
   .navbar > .container,
   .navbar > .container-fluid {
@@ -5349,7 +5350,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #007bff !important; }
+  background-color: #004d1a !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -8405,7 +8406,7 @@ h1, h2, h3, h4, h5,
     width: 54px;
     height: 54px;
     border-radius: 50%;
-    background: #96bb7c;
+    background: #194a2f;
     margin-right: 10px;
     margin-left: 20px; }
     .slider-text .button-link .button-video span {
@@ -8593,7 +8594,7 @@ h1, h2, h3, h4, h5,
   background: #f8f9fa !important; }
 
 .bg-primary {
-  background: #96bb7c !important; }
+  background: #194a2f !important; }
 
 .bg-darken {
   background: #0f101c; }
@@ -8610,8 +8611,8 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #96bb7c !important;
-    border: 1px solid #96bb7c !important;
+    background: #194a2f !important;
+    border: 1px solid #194a2f !important;
     color: #fff !important; }
     .btn.btn-primary:hover {
       border: 1px solid #96bb7c;
@@ -8721,7 +8722,7 @@ h1, h2, h3, h4, h5,
     .services .media-body p {
       margin-bottom: 0; }
   .services.services-bg {
-    background: #96bb7c; }
+    background: #194a2f; }
     .services.services-bg.services-darken {
       background: #8eb672; }
       @media (max-width: 991.98px) {
