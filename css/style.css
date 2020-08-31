@@ -451,7 +451,8 @@ pre {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+   }
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
@@ -464,6 +465,15 @@ pre {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 85%;
+}
 
 .container-fluid {
   width: 100%;
