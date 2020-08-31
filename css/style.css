@@ -3464,13 +3464,7 @@ input[type="button"].btn-block {
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
-.navbar-brand small {
-  display: block;
-  font-size: 10px;
-}
-.nav-item {
-    cursor: pointer;
-}
+
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
   background-color: #15b09b;

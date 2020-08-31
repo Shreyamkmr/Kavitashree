@@ -240,6 +240,7 @@
 
     fixedContentPos: false
   });
+  
 
 
 })(jQuery);
