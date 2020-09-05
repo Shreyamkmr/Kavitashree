@@ -2,6 +2,70 @@
 
 	"use strict";
 
+$(document).ready(function(){
+    $('.owl-one').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
+    $('.owl-two').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
+    $('.owl-three').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+});
+
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000);
 
 	$(window).stellar({
     responsive: true,
@@ -11,13 +75,19 @@
     hideDistantElements: false,
     scrollProperty: 'scroll'
   });
+	//https://codepen.io/chriscoyier/pen/zKbYzP slideshow credits
 
-
+setInterval(function () {
+    $('#my_button_div').addClass('shine');
+    setTimeout(function () {
+        $('#my_button_div').removeClass('shine');
+    }, 1000);
+}, 1500);
 	var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height());
+		$('.js-fullheight').css('height', $(window).height()*.6);
 		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
+			$('.js-fullheight').css('height', $(window).height()*.6);
 		});
 
 	};
@@ -32,6 +102,8 @@
 		}, 1);
 	};
 	loader();
+
+//sunn
 
 	// Scrollax
    $.Scrollax();
@@ -104,6 +176,23 @@
 	$('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
 	});
+
+	//back to top
+	var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
 
 	// scroll
 	var scrollWindow = function() {

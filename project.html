@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/metalurdofont.css">
     <link href='https://fonts.googleapis.com/css?family=Public Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="magicslideshow/magicslideshow.css"/>
+	<script src="magicslideshow/magicslideshow.js" type="text/javascript"></script>
+	<a id="button"></a>
+	
+
   </head>
   <body>
     
@@ -36,7 +41,7 @@
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 	          <!--<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>-->
-	          <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+	          <li class="nav-item"><a href="team.html" class="nav-link">About Us</a></li>
 	          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="services.html" class="nav-link">Services</a></li>
 	          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="project.html"  class="nav-link">Project</a></li>
 	          <!--<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>-->
@@ -47,26 +52,105 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
+    <section class="hero-wrap hero-wrap-2" sdata-stellar-background-ratio="0.5">
+    	
+
+	  	<div id="slideshow">
+	  						<div class="hero-wrap hero-wrap-2">
+	  						<img class="hero-wrap hero-wrap-2" style="height: 100%; width: 100%; object-fit: cover;" id="sl" src="images/SiyasanMundrika.webp" ></div>
+	  						
+	  						<div class="hero-wrap hero-wrap-2">
+	  						<img   style="height: 100%; width: 100%; object-fit: cover;" id="sl" src="images/Ramashish2.webp" ></div>
+	  						
+	  						<div class="hero-wrap hero-wrap-2"  >
+	  						<img style="height: 100%; width: 100%;object-fit: cover;" id="sl" src="images/Jagmano_Garden1.webp" ></div>
+
+	  	</div>
+      <div class="overlay" style="opacity: 0.4"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end">
           <div class="col-md-9 ftco-animate pb-5">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Projects <i class="fa fa-chevron-right"></i></span></p>
-            <h1 class="mb-3 bread">Projects</h1>
+            <h1 style="text-shadow: 1px 1px #194a2f;" class="mb-3 bread">Projects</h1>
           </div>
         </div>
       </div>
     </section>
     
-	  <section class="ftco-section ftco-portfolio">
+    <section class="ftco-section">
+      <div class="container">
+        
+        <div class="row">
+    			<div class="col-md-4 ftco-animate">
+	          <div class="block-7">
+	          		            
+		          <div class="sudo d-lg-flex align-items-center w-100 bg-light py-2 px-4">
+								
+								<p class="w-100 mb-0">
+			            <a href="#Previous-Projects" class="btn btn-primary d-block px-2 py-3">Previous Projects</a>
+			          </p>
+			        </div>
+            </div>
+	        </div>
+	        <div class="col-md-4 ftco-animate">
+	          <div class="block-7">
+	          	
+	            
+		          <div class="sudo d-lg-flex align-items-center w-100 bg-light py-2 px-4">
+								
+								<p class="w-100 mb-0">
+			            <a href="#Running-Projects" class="btn btn-primary d-block px-2 py-3"> Running Projects</a>
+			          </p>
+			        </div>
+            </div>
+	        </div>
+	        <div class="col-md-4 ftco-animate">
+	          <div class="block-7">
+	          	
+	            
+		          <div class=" sudo d-lg-flex align-items-center w-100 bg-light py-2 px-4">
+								
+								<p class="w-100 mb-0">
+			            <a href="#Upcoming-Projects" class="btn btn-primary d-block px-2 py-3">Upcoming Projects</a>
+			          </p>
+			        </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="row justify-content-center mb-5">
+        	<div class="col-lg-12 pb-0">
+          <p>Owning luxurious Homes and Workplaces isn’t a dream anymore. We are here to provide you a comprehensive solution for all your interests. <br><br>We determine the viability of your desired space and put forward the best solution that reflects the ethos of quality living and has the foresight to operate efficiently. We build dream homes and offices.</p>
+      </div>
+        </div>
+      </div>
+    </section>
+ <section class="ftco-section " id="Previous-Projects">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Projects</span>
+            <h2 class="mb-3">Previous Projects</h2>
+            	
+           </div>
+        </div>
+    </div>
+</section>
+
+ 
+<section class="ftco-section ftco-portfolio" style="padding: 0rem" >
+	  	
     	<div class="container">
     		<div class="row no-gutters">
+    			
 	  			<div class="col-md-12 portfolio-wrap">
 	  				<div class="row no-gutters align-items-center">
-	  					<div href="images/Jagmano_Apt.webp"class="col-md-5 img js-fullheight" style="background-image: url(images/JagmanoShree_Garden_2.webp);">
+	  					<div href="images/Jagmano_Apt.webp"class="sudo col-md-5 img js-fullheight" id="cf" >
+	  						<img style="object-fit: cover;"  src="images/Jagmano_Garden2.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
 	  						
+	  						<img style="object-fit: cover;" src="images/Jagmano_Garden3.webp" class="top col-md-12 img js-fullheight" >
 	  					</div>
+	  						
+	  					
 	  					<div class="col-md-7">
 	  						<div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
 	  							<div class="px-4 px-lg-4">
@@ -91,9 +175,16 @@
 
 	  			<div class="col-md-12 portfolio-wrap">
 	  				<div class="row no-gutters align-items-center">
-	  					<div class="col-md-5 order-md-last img js-fullheight" style="background-image: url(images/Rajnath.webp);">
+	  					
+	  					<div  class="sudo col-md-5 img order-md-last js-fullheight " id="cf">
 	  						
+	  						<img style="object-fit: cover;"  src="images/Rajnath1.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
+	  						
+	  						<img style="object-fit: cover;" src="images/Rajnath2.webp" class="top col-md-12 img js-fullheight" >
+	  						
+
 	  					</div>
+	  						
 	  					<div class="col-md-7">
 	  						<div class="text pt-5 pr-md-5 ftco-animate">
 	  							<div class="px-4 px-lg-4">
@@ -117,8 +208,10 @@
 
 	  			<div class="col-md-12 portfolio-wrap">
 	  				<div class="row no-gutters align-items-center">
-	  					<div href="images/Jagmano_Apt.webp"class="col-md-5 img js-fullheight" style="background-image: url(images/Jagmano_Apt.webp);">
+	  					<div href="images/Jagmano_Apt.webp"class="sudo col-md-5 img js-fullheight" id="cf" >
+	  						<img style="object-fit: cover;"  src="images/Jagmanoshree_apt.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
 	  						
+	  						<img style="object-fit: cover;" src="images/Jagmanoshree_apt.webp" class="top col-md-12 img js-fullheight" >
 	  					</div>
 	  					<div class="col-md-7">
 	  						<div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
@@ -143,9 +236,15 @@
 
 	  			<div class="col-md-12 portfolio-wrap">
 	  				<div class="row no-gutters align-items-center">
-	  					<div class="col-md-5 order-md-last img js-fullheight" style="background-image: url(images/Mundrika.webp);">
+	  					<div  class="sudo col-md-5 img order-md-last js-fullheight " id="cf">
 	  						
+	  						<img style="object-fit: cover;"  src="images/Mundrika1.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
+	  						
+	  						<img style="object-fit: cover;" src="images/Mundrika2.webp" class="top col-md-12 img js-fullheight" >
+	  						
+
 	  					</div>
+
 	  					<div class="col-md-7">
 	  						<div class="text pt-5 pr-md-5 ftco-animate">
 	  							<div class="px-4 px-lg-4">
@@ -169,8 +268,10 @@
 
 	  			<div class="col-md-12 portfolio-wrap">
 	  				<div class="row no-gutters align-items-center">
-	  					<div href="images/Jagmano_Apt.webp"class="col-md-5 img js-fullheight" style="background-image: url(images/Siyasan.webp);">
+	  					<div href="images/Jagmano_Apt.webp"class="sudo col-md-5 img js-fullheight" id="cf" >
+	  						<img style="object-fit: cover;"  src="images/SiyasanMundrika.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
 	  						
+	  						<img style="object-fit: cover;" src="images/Siyasan.webp" class="top col-md-12 img js-fullheight" >
 	  					</div>
 	  					<div class="col-md-7">
 	  						<div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
@@ -195,8 +296,13 @@
 
 	  			<div class="col-md-12 portfolio-wrap">
 	  				<div class="row no-gutters align-items-center">
-	  					<div class="col-md-5 order-md-last img js-fullheight" onclick="location.href='images/Ramashish_apt_3.webp';" style="background-image: url(images/Ramashish_apt_3.webp);">
+	  					<div  class="sudo col-md-5 img order-md-last js-fullheight " id="cf">
 	  						
+	  						<img style="object-fit: cover;"  src="images/Ramashish1.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
+	  						
+	  						<img style="object-fit: cover;" src="images/Ramashish2.webp" class="top col-md-12 img js-fullheight" >
+	  						
+
 	  					</div>
 	  					<div class="col-md-7">
 	  						<div class="text pt-5 pr-md-5 ftco-animate">
@@ -222,8 +328,10 @@
 
 	  			<div class="col-md-12 portfolio-wrap">
 	  				<div class="row no-gutters align-items-center">
-	  					<div href="images/Jagmano_Apt.webp"class="col-md-5 img js-fullheight" style="background-image: url(images/Ramdulari_Vatika.webp);">
+	  					<div href="images/Jagmano_Apt.webp"class="sudo col-md-5 img js-fullheight" id="cf" >
+	  						<img style="object-fit: cover;"  src="images/Ramdulari1.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
 	  						
+	  						<img style="object-fit: cover;" src="images/Ramdulari1.webp" class="top col-md-12 img js-fullheight" >
 	  					</div>
 	  					<div class="col-md-7">
 	  						<div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
@@ -248,8 +356,13 @@
 
 	  			<div class="col-md-12 portfolio-wrap">
 	  				<div class="row no-gutters align-items-center">
-	  					<div class="col-md-5 order-md-last img js-fullheight" style="background-image: url(images/shiv_kailasha.webp);">
+	  					<div  class="sudo col-md-5 img order-md-last js-fullheight " id="cf">
 	  						
+	  						<img style="object-fit: cover;"  src="images/ShivKailash1.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
+	  						
+	  						<img style="object-fit: cover;" src="images/ShivKailash3.webp" class="top col-md-12 img js-fullheight" >
+	  						
+
 	  					</div>
 	  					<div class="col-md-7">
 	  						<div class="text pt-5 pr-md-5 ftco-animate">
@@ -275,8 +388,10 @@
 
 	  			<div class="col-md-12 portfolio-wrap">
 	  				<div class="row no-gutters align-items-center">
-	  					<div href="images/Jagmano_Apt.webp"class="col-md-5 img js-fullheight" style="background-image: url(images/Mandar_bhawan.webp);">
+	  					<div href="images/Jagmano_Apt.webp"class="sudo col-md-5 img js-fullheight" id="cf" >
+	  						<img style="object-fit: cover;"  src="images/MandarBhavan.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
 	  						
+	  						<img style="object-fit: cover;" src="images/MandarBhavan.webp" class="top col-md-12 img js-fullheight" >
 	  					</div>
 	  					<div class="col-md-7">
 	  						<div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
@@ -315,78 +430,162 @@
         </div>
     	</div>-->
     </section>
+  
+<section class="ftco-section " id="Running-Projects">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Projects</span>
+            <h2 class="mb-3">Running Projects</h2>
+            	
+           </div>
+        </div>
+    </div>
+</section>
+<section class="ftco-section ftco-portfolio" style="padding: 0rem">
+
+    	<div class="container">
+    		<div class="row no-gutters">
+    			
+	  			
+	  			<div class="col-md-12 portfolio-wrap">
+	  				<div class="row no-gutters align-items-center">
+	  					
+	  					<div href="images/Jagmano_Apt.webp"class="sudo col-md-5 img js-fullheight" id="cf" >
+	  						<img style="object-fit: cover;"  src="images/savitri.webp" class="bottom col-md-12 order-md-last img " >
+	  						
+	  						<img style="object-fit: cover;" src="images/savitri.webp" class="top col-md-12 img " >
+	  					</div>
+	  						
+	  					<div class="col-md-7">
+	  						<div class="text pt-5 pr-md-5 ftco-animate">
+	  							<div class="px-4 px-lg-4">
+	  								<div class="desc ">
+		  								<div class="top">
+			  								<span class="subheading">Estd In: 2019-2021</span>
+				  							<h2 class="mb-4"><a href="images/Rajnath1.webp">Savitri Apartment</a></h2>
+			  							</div>
+			  							<div class="absolute" dir="rtl">
+				  							<p>
+				  								<a style="color: green"> <br>Status: Booking Open<br></a>
+				  								Location: Mahavir Nagar, 70 ft road, Sharistabaad, Patna, Bihar<br>Area: 25.6 Decimal<br>Blocks: 1<br>No. of Flats: 24<br>Type: 2, 3 BHK<br>
+				  								<a style="color: green"> <br>Features:</a> Terrace Garden, Earthquake Resistant, Car and Bike cleaning area, High Speed Elevator, Power Backup, Visitor’s parking area, Intercom, CCTV, Manual Security, Basement and Ground floor parking, Fire Fightening System
+
+				  							</p>
+				  							
+			  							</div>
+		  							</div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>			
+    </section>
+
+ <section class="ftco-section " id="Upcoming-Projects" >
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Projects</span>
+            <h2 class="mb-3">Upcoming Projects</h2>
+            	
+           </div>
+        </div>
+    </div>
+</section>
     
-			<div class="container">
-        <div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
-						
-							
-							<div class="text d-flex align-items-center pt-3">
-								<div>
-									<h1>Current Project</h1>
-									<h3 class="mb-2">Savitri Apartment</h3>
-									<h4><small>Estd In: 2019- 2021</small></h4>
-									
-		            </div>
-							</div>
-							<div class="absolute" dir="rtl">
+<section class="ftco-section ftco-portfolio" style="padding: 0rem" >
+
+    	<div class="container">
+    		<div class="row no-gutters">
+    			
+	  			
+	  			<div class="col-md-12 portfolio-wrap">
+	  				<div class="row no-gutters align-items-center">
+	  					
+	  					<div href="images/Jagmano_Apt.webp"class="sudo col-md-5 img js-fullheight" id="cf" >
+	  						<img style="object-fit: cover;"  src="images/SignatureTower.webp" class="bottom col-md-12 order-md-last img js-fullheight" >
+	  						
+	  						<img style="object-fit: cover;" src="images/SignatureTower.webp" class="top col-md-12 img js-fullheight" >
+	  					</div>
+	  						
+	  					<div class="col-md-7">
+	  						<div class="text pt-5 pr-md-5 ftco-animate">
+	  							<div class="px-4 px-lg-4">
+	  								<div class="desc ">
+		  								<div class="top">
+			  								<span class="subheading">Expected: 2021</span>
+				  							<h2 class="mb-4"><a href="images/Rajnath1.webp">Signature Tower</a></h2>
+			  							</div>
+			  							<div class="absolute" dir="rtl">
 				  							<p>
-				  								Location:  Mahavir Nagar, 70 ft road, Sharistabaad, Patna, Bihar<br>Area: 25.6 Decimal<br>Blocks: 1<br>No. of Flats: 24<br>Type: 2, 3 BHK<br>
-				  								<p style="color: green">Status: Available</p>
+				  								<a style="color: red"> <br>Status: under Process<br></a>
+				  								Location: RPS Engineering College, Khagaul Road, Patna, Bihar<br>Area: 64 Decimal<br>Blocks: 2<br>No. of Flats: 66<br>Type: 1, 2, 3 BHK<br>
+				  								<a style="color: green"> <br>Features:</a> Terrace Garden, Earthquake Resistant, Car and Bike cleaning area, High Speed Elevator, Power Backup, Visitor’s parking area, Intercom, CCTV, Manual Security, Basement and Ground floor parking, Fire Fighting System 
+
 				  							</p>
 				  							
 			  							</div>
-						</div>
-					<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
-						
-							
-							<div class="text d-flex align-items-center pt-3">
-								<div>
-									<h1>Upcoming Project</h1>
-									<h3 class="mb-2">Signature Tower</h3>
-									<h4><small>Expected: 2021</small></h4>
-									
-		            </div>
-							</div>
-							<div class="absolute" dir="rtl">
+		  							</div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  					<div class="col-md-7">
+	  						<div class="text pt-5 pr-md-5 ftco-animate">
+	  							<div class="px-4 px-lg-4">
+	  								<div class="desc ">
+		  								<div class="top">
+			  								<span class="subheading">Expected: 2021 Onwards</span>
+				  							<h2 class="mb-4"><a href="images/Rajnath1.webp">Vaikunthnath Tower</a></h2>
+			  							</div>
+			  							<div class="absolute" dir="rtl">
 				  							<p>
-				  								Location:  RPS Engineering College, Khagaul Road, Patna, Bihar<br>Area: 64 Decimal<br>Blocks: 2<br>No. of Flats: 66<br>Type: 1, 2, 3 BHK<br>
+				  								<a style="color: green"> <br>Status: Soon to be Unlocked<br></a>
 				  								
+
 				  							</p>
 				  							
 			  							</div>
-						</div>
-					
-				</div>
-					
-				</div>
-			</div>
-		
-		<!--<section class="ftco-section">
-			<div class="container"><h1>Upcoming Projects</h1>
-        <div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
-						
-							
-							<div class="text d-flex align-items-center pt-3">
-								<div>
-									<h3 class="mb-2">Signature Tower</h3>
-									<h4><small>Expected: 2021</small></h4>
-									
-		            </div>
-							</div>
-							<div class="absolute" dir="rtl">
+		  							</div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  					<div class="col-md-7">
+	  						<div class="text pt-5 pr-md-5 ftco-animate">
+	  							<div class="px-4 px-lg-4">
+	  								<div class="desc ">
+		  								<div class="top">
+			  								<span class="subheading">Expected: 2021 Onwards</span>
+				  							<h2 class="mb-4"><a href="images/Rajnath1.webp">To be Unlocked</a></h2>
+			  							</div>
+			  							<div class="absolute" dir="rtl">
 				  							<p>
-				  								Location:  RPS Engineering College, Khagaul Road, Patna, Bihar<br>Area: 64 Decimal<br>Blocks: 2<br>No. of Flats: 66<br>Type: 1, 2, 3 BHK<br>
+				  								<a style="color: green"> <br>Status: Soon to be Unlocked<br></a>
 				  								
+
 				  							</p>
 				  							
 			  							</div>
-						</div>
-					
-				</div>
-			</div>
-		</section>-->
+		  							</div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>
+ 			
+    </section>
+		<!--<section class="ftco-section ftco-portfolio">
+     <div class="row justify-content-center mb-5" id="Upcoming-Projects">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Projects</span>
+            <h2 class="mb-3" id="Previous-Projects">Upcoming Projects</h2>
+            	
+                   </div>
+        </div>
+        </section>
+
+	for heading of different types of project
+    -->
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
@@ -480,6 +679,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+   
     
   </body>
 </html>

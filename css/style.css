@@ -33,6 +33,32 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+/*! for zoom hover with origin bottom*/
+* { 
+            box-sizing: border-box; 
+        } 
+  
+        .sudo { 
+  
+            padding: 0px; 
+            background-color: auto; 
+            transition: transform .3s; transform-origin: bottom;
+            width: auto; 
+            height: auto; 
+            margin: 0 auto; 
+            border-radius: 10px; 
+        } 
+  
+        .sudo:hover { 
+            -ms-transform: scale(1.1); 
+            /* IE 9 */ 
+            -webkit-transform: scale(1.1); 
+            /* Safari 3-8 */ 
+            transform: scale(1.1); 
+            transform-origin: bottom;
+            p.mix {border-style: dotted dashed solid double;}
+
+        } 
 
 *,
 *::before,
@@ -445,6 +471,193 @@ pre {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.art{
+  display:inline-block;
+  height:auto;
+  width:auto;
+  position:relative;
+  overflow:hidden;
+}
+.art img{
+  position:absolute;top:0;left:0;height:100%;width:100%;
+}
+.art:before{
+  content:"";z-index:10;
+  position:absolute;height:200%;width:200%;top:-120%;left:-120%;
+  background:linear-gradient(transparent 0%,
+    rgba(255, 255, 255, 0.1) 45%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.1) 55%,
+    transparent 100%);
+    transition:all 2s;
+    transform:rotate(-45deg);
+    animation: shine 3s infinite forwards;
+}
+@keyframes shine{
+  0%{top:-120%;left:-120%;}
+  10%{left:100%;top:100%;}
+  20%{left:100%;top:100%;}
+  100%{left:100%;top:100%;}
+  
+}
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top {
+  animation-name: fade;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: alternate;
+}
+
+@keyframes fade {
+   0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+
+  #slideshow { 
+    margin: auto; 
+    position: relative; 
+    width: auto; 
+    height: auto; 
+    padding: auto; 
+    box-shadow: 0 0 0px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: auto; 
+    left: auto; 
+    right: auto; 
+    bottom: auto; 
+}
+
 
 .container {
   width: 100%;
@@ -4918,7 +5131,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont,'Public Sans', "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8224,12 +8437,13 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 15px;
+    font-size: 16px;
     padding-top: .9rem;
     padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: #000000;
+    color: white;
+    
     font-weight: 600;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
@@ -8396,12 +8610,12 @@ h1, h2, h3, h4, h5,
     opacity: .1;
     background: #21243d;
     background: black;
-    background: -moz-linear-gradient(45deg, black 0%, white 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, black), color-stop(100%, white));
-    background: -webkit-linear-gradient(45deg, black 0%, white 100%);
-    background: -o-linear-gradient(45deg, black 0%, white 100%);
-    background: -ms-linear-gradient(45deg, black 0%, white 100%);
-    background: linear-gradient(45deg, black 0%, white 100%);
+    background: -moz-linear-gradient(-45deg, black 0%, white 100%);
+    background: -webkit-gradient(left bottom, right top,color-stop(100%, white), color-stop(0%, black));
+    background: -webkit-linear-gradient(-45deg, black 0%, white 100%);
+    background: -o-linear-gradient(-45deg, black 0%, white 100%);
+    background: -ms-linear-gradient(-45deg, black 0%, white 100%);
+    background: linear-gradient(-45deg, black 0%, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
     height: 850px; }
   .hero-wrap.hero-wrap-2 {
