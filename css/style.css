@@ -641,6 +641,8 @@ opacity:0;
   color: #96a2a7;
 }
 
+
+
   #slideshow { 
     margin: auto; 
     position: relative; 
@@ -2777,7 +2779,7 @@ input[type="button"].btn-block {
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #ffff00;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem; }
@@ -2789,6 +2791,14 @@ input[type="button"].btn-block {
 .dropdown-menu-right {
   right: 0;
   left: auto; }
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+  .navbar .nav-item:hover .nav-link{ color: #fff;  }
+  .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+  .navbar .dropdown-menu.fade-up{ top:180%;  }
+  .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
 
 @media (min-width: 576px) {
   .dropdown-menu-sm-left {
@@ -2917,9 +2927,9 @@ input[type="button"].btn-block {
   background-color: transparent;
   border: 0; }
   .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
+   
     text-decoration: none;
-    background-color: #f8f9fa; }
+     }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
@@ -8409,15 +8419,16 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 400; }
+  font-weight: 900; }
 
 .text-primary {
   color: #96bb7c !important; }
 
 .ftco-navbar-light {
   background: transparent !important;
+  background-image: linear-gradient(to top, #ffffff00, #b4d1da) !important;
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 3; }
@@ -8502,7 +8513,7 @@ h1, h2, h3, h4, h5,
     border: 1px solid #e16262;
     background: #e16262 !important; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #96bb7c; }
+    color: #194a2f; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav > .nav-item.active > a {
       color: #96bb7c; } }
@@ -8591,7 +8602,7 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap {
   width: 100%;
-  height: 850px;
+  height: 700px;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9296,7 +9307,7 @@ textarea.form-control {
 
 .heading-section h2 {
   font-size: 60px;
-  font-weight: 400; }
+  font-weight: bold; }
   @media (max-width: 767.98px) {
     .heading-section h2 {
       font-size: 28px; } }

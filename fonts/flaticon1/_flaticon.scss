@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fimanager:before {
+    display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-001-donut-shop:before { content: "\f100"; }
+.flaticon-002-pizza-shop:before { content: "\f101"; }
+.flaticon-003-gym:before { content: "\f102"; }
+.flaticon-004-spa:before { content: "\f103"; }
+.flaticon-005-burger:before { content: "\f104"; }
+.flaticon-006-pet-shop:before { content: "\f105"; }
+.flaticon-007-candy-shop:before { content: "\f106"; }
+.flaticon-008-butcher:before { content: "\f107"; }
+.flaticon-009-hotel:before { content: "\f108"; }
+.flaticon-010-swimming:before { content: "\f109"; }
+.flaticon-011-generic:before { content: "\f10a"; }
+.flaticon-012-cinema:before { content: "\f10b"; }
+.flaticon-013-coffee-shop:before { content: "\f10c"; }
+.flaticon-014-shopping-bag:before { content: "\f10d"; }
+.flaticon-015-fast-food:before { content: "\f10e"; }
+.flaticon-016-book-shop:before { content: "\f10f"; }
+.flaticon-017-bakery-shop:before { content: "\f110"; }
+.flaticon-018-take-away:before { content: "\f111"; }
+.flaticon-019-parking:before { content: "\f112"; }
+.flaticon-020-gardening:before { content: "\f113"; }
+.flaticon-021-library:before { content: "\f114"; }
+.flaticon-022-drinker:before { content: "\f115"; }
+.flaticon-023-gasoline-station:before { content: "\f116"; }
+.flaticon-024-surf:before { content: "\f117"; }
+.flaticon-025-electricity:before { content: "\f118"; }
+.flaticon-026-sport:before { content: "\f119"; }
+.flaticon-027-shoe-shop:before { content: "\f11a"; }
+.flaticon-028-ice-cream-shop:before { content: "\f11b"; }
+.flaticon-029-house:before { content: "\f11c"; }
+.flaticon-030-diy:before { content: "\f11d"; }
+.flaticon-031-hot-tub:before { content: "\f11e"; }
+.flaticon-032-paint:before { content: "\f11f"; }
+.flaticon-033-water:before { content: "\f120"; }
+.flaticon-034-fruit-shop:before { content: "\f121"; }
+.flaticon-035-garage:before { content: "\f122"; }
+.flaticon-036-pharmacy:before { content: "\f123"; }
+.flaticon-037-dry-cleaning:before { content: "\f124"; }
+.flaticon-038-vending-machine:before { content: "\f125"; }
+.flaticon-039-off-license:before { content: "\f126"; }
+.flaticon-040-bike-shop:before { content: "\f127"; }
+.flaticon-041-taxi:before { content: "\f128"; }
+.flaticon-042-clothing-shop:before { content: "\f129"; }
+.flaticon-043-restaurant:before { content: "\f12a"; }
+.flaticon-044-crossing:before { content: "\f12b"; }
+.flaticon-045-school:before { content: "\f12c"; }
+.flaticon-046-bar:before { content: "\f12d"; }
+.flaticon-047-barber:before { content: "\f12e"; }
+.flaticon-048-coffee-machine:before { content: "\f12f"; }
+.flaticon-049-post-office:before { content: "\f130"; }
+.flaticon-050-newspaper:before { content: "\f131"; }
+
+$font-Flaticon-001-donut-shop: "\f100";
+$font-Flaticon-002-pizza-shop: "\f101";
+$font-Flaticon-003-gym: "\f102";
+$font-Flaticon-004-spa: "\f103";
+$font-Flaticon-005-burger: "\f104";
+$font-Flaticon-006-pet-shop: "\f105";
+$font-Flaticon-007-candy-shop: "\f106";
+$font-Flaticon-008-butcher: "\f107";
+$font-Flaticon-009-hotel: "\f108";
+$font-Flaticon-010-swimming: "\f109";
+$font-Flaticon-011-generic: "\f10a";
+$font-Flaticon-012-cinema: "\f10b";
+$font-Flaticon-013-coffee-shop: "\f10c";
+$font-Flaticon-014-shopping-bag: "\f10d";
+$font-Flaticon-015-fast-food: "\f10e";
+$font-Flaticon-016-book-shop: "\f10f";
+$font-Flaticon-017-bakery-shop: "\f110";
+$font-Flaticon-018-take-away: "\f111";
+$font-Flaticon-019-parking: "\f112";
+$font-Flaticon-020-gardening: "\f113";
+$font-Flaticon-021-library: "\f114";
+$font-Flaticon-022-drinker: "\f115";
+$font-Flaticon-023-gasoline-station: "\f116";
+$font-Flaticon-024-surf: "\f117";
+$font-Flaticon-025-electricity: "\f118";
+$font-Flaticon-026-sport: "\f119";
+$font-Flaticon-027-shoe-shop: "\f11a";
+$font-Flaticon-028-ice-cream-shop: "\f11b";
+$font-Flaticon-029-house: "\f11c";
+$font-Flaticon-030-diy: "\f11d";
+$font-Flaticon-031-hot-tub: "\f11e";
+$font-Flaticon-032-paint: "\f11f";
+$font-Flaticon-033-water: "\f120";
+$font-Flaticon-034-fruit-shop: "\f121";
+$font-Flaticon-035-garage: "\f122";
+$font-Flaticon-036-pharmacy: "\f123";
+$font-Flaticon-037-dry-cleaning: "\f124";
+$font-Flaticon-038-vending-machine: "\f125";
+$font-Flaticon-039-off-license: "\f126";
+$font-Flaticon-040-bike-shop: "\f127";
+$font-Flaticon-041-taxi: "\f128";
+$font-Flaticon-042-clothing-shop: "\f129";
+$font-Flaticon-043-restaurant: "\f12a";
+$font-Flaticon-044-crossing: "\f12b";
+$font-Flaticon-045-school: "\f12c";
+$font-Flaticon-046-bar: "\f12d";
+$font-Flaticon-047-barber: "\f12e";
+$font-Flaticon-048-coffee-machine: "\f12f";
+$font-Flaticon-049-post-office: "\f130";
+$font-Flaticon-050-newspaper: "\f131";
