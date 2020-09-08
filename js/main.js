@@ -253,7 +253,7 @@ btn.on('click', function(e) {
 					    number: num,
 					    numberStep: comma_separator_number_step
 
-					  }, 3000
+					  }, 4500
 					);
 				});
 				
