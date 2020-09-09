@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/metalurdofont.css">
     <link href='https://fonts.googleapis.com/css?family=Public Sans' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
   </head>
@@ -74,16 +75,24 @@
 	  	</div>
      
       <div class="overlay" style="opacity: .3;"></div>
-      <!--
+      
       <div class="container">
         <div class="row no-gutters slider-text align-items-center">
           <div class="col-md-10 col-lg-7 ftco-animate d-flex align-items-end">
-          	<div class="text">
-	            <h1 style="text-shadow: 1px 1px #194a2f;" class="mb-4">We Design Comfort<br>We Rejuvenate Lifestyle</h1>
+          	<div class="text" >
+	            <!--<h2 class="ml4" style="color: #afc6cd;text-shadow: 2px 2px #194a2f; background-color: rgba(250,250, 250, 0.3); max-width: 100vh;
+     max-height: 100%; " class="mb-4">
+	            	 <span class="letters letters-1" style="max-width: 100vh;
+     max-height: 100%;">We Design Comfort</span>
+  					<span class="letters letters-2" style="max-width: 100vh;
+     max-height: 100%;">We Rejuvenate Lifestyle</span>
+  					<span class="letters letters-3" style="max-width: 100vh;
+     max-height: 100%;">We Build Dreams</span>
+ 				</h2>-->
 	           
-	            <p style="color: black; font-size: 150%;text-shadow: .5px .5px #194a2f;" ><b>We design, develop and provide comfortable accommodation for a convenient lifestyle. We are a Bihar based renowned and most trusted estate company.</b>
-	            </p>
-	            <div class="d-flex meta">
+	           <!-- <p style="color: black; font-size: 150%;text-shadow: .5px .5px #194a2f;" ><b>We design, develop and provide comfortable accommodation for a convenient lifestyle. We are a Bihar based renowned and most trusted estate company.</b>
+	            </p>-->
+	            <!--<div class="d-flex meta">
 		            <div class=""><p class="sudo mb-0"><a href="project.html" class="btn btn-primary py-3 px-2 px-md-4 ">Explore Projects</a></p></div>
 		            <a href="#watch-video" class="d-flex align-items-center button-link sudo">
 		            	<div class="button-video d-flex align-items-center justify-content-center sudo">
@@ -92,10 +101,11 @@
 			            <span style="font-size: 150%;text-shadow: 1px 1px #194a2f;">Watch our video</span>
 		            </a>
 		          </div>
+		      -->
             </div>
           </div>
         </div>
-      </div>-->
+      </div>
     </section>
 
     <section class="ftco-section ftco-no-pb ftco-no-pt bg-primary" id="Services">
@@ -767,6 +777,59 @@
                 owl.trigger('stop.owl.autoplay')
               })
             })
+  </script>
+  <script type="text/javascript">
+  var ml4 = {};
+ml4.opacityIn = [0,1];
+ml4.scaleIn = [0.2, 1];
+ml4.scaleOut = 3;
+ml4.durationIn = 800;
+ml4.durationOut = 600;
+ml4.delay = 500;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml4 .letters-1',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-1',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
   </script>
     
   </body>

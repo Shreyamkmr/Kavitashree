@@ -642,6 +642,30 @@ opacity:0;
   color: #96a2a7;
 }
 
+.ml4 {
+  position: relative;
+  max-width: 100vh;
+     max-height: 100%;
+  font-weight: 900;
+  font-size: 4.2em;
+}
+.ml4 .letters {
+  position: absolute;
+
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  margin: 0;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
+}
 
 
   #slideshow { 
@@ -8656,7 +8680,7 @@ h1, h2, h3, h4, h5,
         display: none; }
 
 .slider-text {
-  height: 850px; }
+  height: 700px; }
   .slider-text h1 {
     font-size: 60px;
     color: #000000;
