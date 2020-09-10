@@ -73,7 +73,7 @@ setInterval(function() {
     parallaxElements: true,
     horizontalScrolling: false,
     hideDistantElements: false,
-    scrollProperty: 'scroll'
+    
   });
 	//https://codepen.io/chriscoyier/pen/zKbYzP slideshow credits
 
