@@ -644,8 +644,7 @@ opacity:0;
 
 .ml4 {
   position: relative;
-  max-width: 100vh;
-     max-height: 100%;
+  
   font-weight: 900;
   font-size: 4.2em;
 }
@@ -667,6 +666,7 @@ opacity:0;
   opacity: 0; 
 }
 
+.secondary {background-color: #194a2f; color: #000;padding-bottom: .7rem ;}
 
   #slideshow { 
     margin: auto; 
@@ -9181,7 +9181,8 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  padding: 7em 0;
+  padding-top: : 3em ;
+  padding-bottom: 0em ;
   background: #0f101c; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
