@@ -616,10 +616,7 @@ opacity:0;
 
 #slideshow > div { 
     position: absolute; 
-    top: auto; 
-    left: auto; 
-    right: auto; 
-    bottom: auto; 
+    
 }
 
 

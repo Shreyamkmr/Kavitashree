@@ -67,14 +67,7 @@ setInterval(function() {
     .appendTo('#slideshow');
 }, 3000);
 
-	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    
-  });
+	
 	//https://codepen.io/chriscoyier/pen/zKbYzP slideshow credits
 
 setInterval(function () {
