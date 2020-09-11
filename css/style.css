@@ -604,6 +604,25 @@ opacity:0;
 }
 
 .secondary {background-color: #194a2f; color: #000;padding-bottom: .7rem ;}
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+
 
   #slideshow { 
     margin: auto; 
@@ -8507,7 +8526,10 @@ h1, h2, h3, h4, h5,
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: #fff !important;
+    background-image: url('../images/navbag.png')!important;
+    background-size: 100% 100% !important;
+
+    /* background: #fff !important;*/
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
     @media (max-width: 991.98px) {
