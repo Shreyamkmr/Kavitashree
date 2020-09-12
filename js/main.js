@@ -60,9 +60,10 @@ $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() {
   $('#slideshow > div:first')
-    .fadeOut(1000)
+    .fadeOut(600)
     .next()
-    .fadeIn(1000)
+    .animate({width:"toggle"})
+    .slideDown(1000)
     .end()
     .appendTo('#slideshow');
 }, 3000);

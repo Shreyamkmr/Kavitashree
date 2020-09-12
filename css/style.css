@@ -638,6 +638,24 @@ opacity:0;
     
 }
 
+@media (min-width:800px) { 
+#about-welcome{
+background-image: url(../images/about.webp);
+object-fit: fill;
+}
+}
+@media (min-width:1024px) {
+#about-welcome{
+ background-image: url(../images/front1.webp);
+ object-fit: fill;
+}
+}
+@media (min-width:1280px) {
+#about-welcome{
+ background-image: url(../images/about.webp);
+ object-fit: fill !important;
+}
+}
 
 .container {
   width: 100%;
