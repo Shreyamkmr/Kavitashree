@@ -638,9 +638,9 @@ opacity:0;
     
 }
 
-@media (min-width:800px) { 
+@media (min-width:300px) { 
 #about-welcome{
-background-image: url(../images/about.webp);
+background-image: url(../images/abouts.webp);
 object-fit: fill;
 }
 }
