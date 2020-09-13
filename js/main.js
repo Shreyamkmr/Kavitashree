@@ -57,19 +57,27 @@ $(document).ready(function(){
 
 
 $("#slideshow > div:gt(0)").hide();
+$(document).ready(function() {
 
-setInterval(function() {
+
+    setInterval(function() {
+    	if (document.hasFocus()) {
+
   $('#slideshow > div:first')
     .fadeOut(600)
     .next()
     .animate({width:"toggle"})
     .slideDown(1000)
     .end()
-    .appendTo('#slideshow');
+    .appendTo('#slideshow');}
 }, 3000);
 
-	
-	//https://codepen.io/chriscoyier/pen/zKbYzP slideshow credits
+
+
+});
+//https://stackoverflow.com/questions/7483525/pausing-setinterval-when-page-browser-is-out-of-focus
+
+//https://codepen.io/chriscoyier/pen/zKbYzP slideshow credits
 	var tag = document.createElement('script');
 	tag.src = "//www.youtube.com/player_api";
 	var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -91,9 +99,9 @@ setInterval(function () {
 }, 1500);
 	var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height()*.6);
+		$('.js-fullheight').css('height', $(window).height()*.55);
 		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height()*.6);
+			$('.js-fullheight').css('height', $(window).height()*.55);
 		});
 
 	};
