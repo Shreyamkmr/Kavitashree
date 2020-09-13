@@ -624,6 +624,7 @@ opacity:0;
 }
 
 
+
   #slideshow { 
     margin: auto; 
     position: relative; 
@@ -646,13 +647,13 @@ object-fit: fill;
 }
 @media (min-width:1024px) {
 #about-welcome{
- background-image: url(../images/front1.webp);
+ background-image: url(../images/ganga.webp);
  object-fit: fill;
 }
 }
 @media (min-width:1280px) {
 #about-welcome{
- background-image: url(../images/about.webp);
+ background-image: url(../images/ganga.webp);
  object-fit: fill !important;
 }
 }
