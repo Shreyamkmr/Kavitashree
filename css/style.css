@@ -577,7 +577,10 @@ opacity:0;
 opacity:0;
 }
 }
-
+img.center {
+    display: block;
+    margin: 0 auto;
+}
 
 .ml4 {
   position: relative;
