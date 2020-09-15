@@ -10215,8 +10215,8 @@ textarea.form-control {
 #ftco-loader .circular {
   
   position: absolute;
-  left: calc(50% - 56px);
-  top: calc(50% - 56px);
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
   display: block;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
