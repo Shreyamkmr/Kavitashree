@@ -103,6 +103,16 @@ setInterval(function () {
 		$(window).resize(function(){
 			$('.js-fullheight').css('height', $(window).height()*.55);
 		});
+		if ($(window).width()<636) {
+		$('.js-kullheight').css('height', $(window).width()*.55);
+		$(window).resize(function(){
+			$('.js-kullheight').css('height', $(window).width()*.55);
+		});};
+		if ($(window).width()>636) {
+		$('.js-kullheight').css('height', 500);
+		$(window).resize(function(){
+			$('.js-kullheight').css('height', 500);
+		});};
 
 	};
 	fullHeight();
