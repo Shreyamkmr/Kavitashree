@@ -2833,7 +2833,7 @@ input[type="button"].btn-block {
     margin-left: 0; }
 
 .dropdown-menu {
-  position: absolute;
+  position: relative;
   top: 100%;
   left: 0;
   z-index: 1000;
@@ -2983,7 +2983,10 @@ input[type="button"].btn-block {
   border-top: 1px solid #e9ecef; }
 
 .dropdown-item {
+  position: relative;
   display: block;
+  z-index: 1000;
+
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
@@ -2996,6 +2999,7 @@ input[type="button"].btn-block {
   .dropdown-item:hover, .dropdown-item:focus {
    
     text-decoration: none;
+
      }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
