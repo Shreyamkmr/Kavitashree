@@ -3014,8 +3014,7 @@ input[type="button"].btn-block {
     background-color: transparent; }
 
 .dropdown-menu.show {
-  display: flex; 
-  flex-direction: column;}
+  display: block; }
 
 .dropdown-header {
   display: block;
